@@ -1,4 +1,4 @@
-# Monacaとニフティクラウドmobile backendでWebコンテンツのスマホアプリ化を体験してみよう
+# Monacaとニフティクラウドmobile backendでWebコンテンツのスマホアプリ化を体験してみよう
 MonacaのRSSリーダーのサンプルをベースに、ニフティクラウドmobile backendを使ったお気に入り機能を実装したRSSリーダー（JavaScript SDK version 2 対応）
 
 * [fav-rss-reader-v2](https://goo.gl/KQRcQy)として公開していましたサンプルプロジェクトをハンズオンセミナー向けに一部改良し掲載しています。(2016/1/26)
@@ -30,9 +30,9 @@ MonacaのRSSリーダーのサンプルをベースに、ニフティクラウ�
 
 1. index.htmlの12行を以下のように書き換える
  * 変更前
-    <script src="js/favorite-offline.js"></script>
+        <script src="js/favorite-offline.js"></script>
  * 変更後
-    <script src="js/favorite-online.js"></script>
+        <script src="js/favorite-online.js"></script>
 
 1. [mobile backendのダッシュボード](https://console.mb.cloud.nifty.com/)で新しいアプリを作成する
 1. 作成したアプリのアプリケーションキーをコピーして、Monaca IDE上のindex.htmlの21行目にある「YOUR\_NCMB\_APPLICATION\_KEY」を置き換える
