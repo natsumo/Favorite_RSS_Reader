@@ -1,0 +1,30 @@
+{
+    "plugins": [
+        "mobi.monaca.plugins.Monaca@3.0.0"
+    ],
+    "framework_version": "3.5",
+    "xcode_version": "7",
+    "cordova_version": "6.2",
+    "plugin_settings": {
+        "cordova-plugin-crosswalk-webview": {
+            "variables": [
+                "XWALK_VERSION=18.48.477.13"
+            ]
+        }
+    },
+    "external_plugins": [
+        "cordova-plugin-whitelist@1.2.2",
+        "cordova-plugin-splashscreen@3.2.2",
+        "cordova-custom-config@2.0.3"
+    ],
+    "title-ja": "RSSリーダー",
+    "title-en": "",
+    "description-ja": "Cordova v6.2.0",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [
+        "android",
+        "ios"
+    ],
+    "name": "generated-1479435286-582e5a72fd1734bb7112e6c5"
+}

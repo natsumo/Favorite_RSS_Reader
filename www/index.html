@@ -10,37 +10,37 @@
     <link rel="stylesheet" href="css/favorite.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/favorite-offline.js"></script>
-    
+
     <script>
-    // CHANGE YOUR URL HERE!
+    // 表示するページはここで変更できます▼
     var feedUrl = "http://iot.mb.cloud.nifty.com/iotcolumn/rss.xml";
 
     $(function() {
-      
+        // APIキーの設定
         var favorite = new Favorite({
             applicationKey: "YOUR_NCMB_APPLICATION_KEY",
                  clientKey: "YOUR_NCMB_CLIENT_KEY"
         });
-        
+
         var feed = new Feed({
             url: feedUrl,
             favorite: favorite
         });
-            
+
         if (monaca.isIOS) {
             $('.toolbar').css('margin-top', '20px');
             $('.button').css('top', '20px');
         }
-        
+
         $('.button').click(function() {
           console.log('Reload.');
           feed.load();
         });
-        
+
         feed.load();
-        
+
     });
-    
+
 </script>
 </head>
 <body>
@@ -48,7 +48,7 @@
         <h2>RSS Reader</h2>
         <div class="button">Reload</div>
     </div>
-      
+
     <div id="mask">
       <div id="loading"><img src="loading.gif"></div>
     </div>
